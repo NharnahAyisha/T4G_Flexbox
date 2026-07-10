@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: right;
+  background: #00695c;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.navbar a:hover {
+  background: #004d40;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 50px;
+  background: #e0f2f1;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #00695c;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Content Section */
+.content {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.content h2 {
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #00695c;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #004d40;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00695c;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* Topics Grid Layout */
+.topics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Individual Topic Card */
+.topic-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Images */
+.topic-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Headings */
+.topic-card h3 {
+  margin: 15px 0 10px;
+  color: #00695c;
+  font-size: 1.2em;
+}
+
+/* Description Text */
+.topic-card p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+/* About Section Layout */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Text Styling */
+.about-text {
+  flex: 1.2; /* slightly larger share for text */
+}
+
+.about-text h2 {
+  color: #00695c;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Image Styling */
+.about-image {
+  flex: 0.8; /* smaller share for image */
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 80%;   /* reduce size */
+  height: auto;     /* keep correct shape */
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .about-image img {
+    max-width: 100%; /* full width on mobile */
+  }
+}
